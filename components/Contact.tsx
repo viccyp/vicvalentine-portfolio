@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-black text-white">
+    <section id="contact" className="py-20 bg-transparent text-white relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 uppercase tracking-normal">Get In Touch</h2>
         <p className="text-xl text-gray-400 text-center mb-12 uppercase tracking-normal">
@@ -45,7 +45,7 @@ export default function Contact() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[rgb(120,30,150)] focus:border-transparent outline-none transition placeholder-gray-500"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[#AB7672] focus:border-transparent outline-none transition placeholder-gray-500"
                 placeholder="Your name"
               />
             </div>
@@ -61,7 +61,7 @@ export default function Contact() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[rgb(120,30,150)] focus:border-transparent outline-none transition placeholder-gray-500"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[#AB7672] focus:border-transparent outline-none transition placeholder-gray-500"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -75,7 +75,7 @@ export default function Contact() {
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[rgb(120,30,150)] focus:border-transparent outline-none transition uppercase"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[#AB7672] focus:border-transparent outline-none transition uppercase"
               >
                 <option value="session-gigs">Session Gigs</option>
                 <option value="recordings">Recordings</option>
@@ -94,14 +94,14 @@ export default function Contact() {
                 rows={6}
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[rgb(120,30,150)] focus:border-transparent outline-none transition resize-none placeholder-gray-500"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[#AB7672] focus:border-transparent outline-none transition resize-none placeholder-gray-500"
                 placeholder="Tell me about your project or enquiry..."
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-[rgb(120,30,150)] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[rgb(140,40,170)] transition-colors shadow-lg hover:shadow-xl uppercase tracking-normal"
+              className="w-full bg-[#AB7672] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#C18E8A] transition-colors shadow-lg hover:shadow-xl uppercase tracking-normal"
             >
               Send Message
             </button>
@@ -113,14 +113,14 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="mailto:contact@vicvalentine.com"
-              className="text-[rgb(120,30,150)] hover:text-[rgb(140,40,170)] font-medium"
+              className="text-[#AB7672] hover:text-[#C18E8A] font-medium"
             >
               contact@vicvalentine.com
             </a>
             <span className="hidden sm:inline text-gray-600">•</span>
             <a
               href="tel:+44XXXXXXXXXX"
-              className="text-[rgb(120,30,150)] hover:text-[rgb(140,40,170)] font-medium"
+              className="text-[#AB7672] hover:text-[#C18E8A] font-medium"
             >
               +44 XXXX XXXXXX
             </a>
