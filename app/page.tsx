@@ -9,7 +9,7 @@ export default function Home() {
     <main className="min-h-screen relative">
       {/* Background Image - Fixed for entire page */}
       <div 
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat -z-10"
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat -z-10 blur-md md:blur-none"
         style={{
           backgroundImage: "url('/hero-bg.jpg')",
           backgroundAttachment: 'fixed',
