@@ -12,7 +12,7 @@ export default function Services() {
     },
     {
       title: 'Drum Lessons',
-      description: 'Personalized drum lessons for all skill levels. Learn technique, rhythm, and musicality in a supportive and engaging environment.',
+      description: 'Personalised drum lessons for all skill levels. Learn technique, rhythm, and musicality in a supportive and engaging environment.',
       icon: '🎓',
     },
   ]
