@@ -93,4 +93,3 @@ The website uses Tailwind CSS. You can:
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [React Documentation](https://react.dev)
-
