@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,18 +18,17 @@ export default function Contact() {
     setSubmitStatus('idle')
 
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          service: formData.service,
-          message: formData.message,
-          to_email: 'drums@vicvalentine.com',
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
-      )
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
 
       setSubmitStatus('success')
       setFormData({ name: '', email: '', message: '', service: 'session-gigs' })
