@@ -14,8 +14,19 @@ export default function Navigation() {
   }
 
   return (
-    <nav className="sticky top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="sticky top-0 w-full z-50 border-b border-gray-800">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/hero-bg.jpg')",
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+      </div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <button
@@ -70,8 +81,16 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-black/95">
+        <div className="md:hidden relative">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url('/hero-bg.jpg')",
+            }}
+          >
+            <div className="absolute inset-0 bg-black/90"></div>
+          </div>
+          <div className="relative px-2 pt-2 pb-3 space-y-1">
             <button
               onClick={() => scrollToSection('about')}
               className="block text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-base font-medium w-full text-left"
