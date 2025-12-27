@@ -45,7 +45,7 @@ export default function Contact() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none transition placeholder-gray-500"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[rgb(53,0,14)] focus:border-transparent outline-none transition placeholder-gray-500"
                 placeholder="Your name"
               />
             </div>
@@ -61,7 +61,7 @@ export default function Contact() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none transition placeholder-gray-500"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[rgb(53,0,14)] focus:border-transparent outline-none transition placeholder-gray-500"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -75,7 +75,7 @@ export default function Contact() {
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[rgb(53,0,14)] focus:border-transparent outline-none transition"
               >
                 <option value="session-gigs">Session Gigs</option>
                 <option value="recordings">Recordings</option>
@@ -94,14 +94,14 @@ export default function Contact() {
                 rows={6}
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none transition resize-none placeholder-gray-500"
+                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-[rgb(53,0,14)] focus:border-transparent outline-none transition resize-none placeholder-gray-500"
                 placeholder="Tell me about your project or enquiry..."
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-colors shadow-lg hover:shadow-xl"
+              className="w-full bg-[rgb(53,0,14)] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[rgb(70,0,20)] transition-colors shadow-lg hover:shadow-xl"
             >
               Send Message
             </button>
@@ -113,14 +113,14 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="mailto:contact@vicvalentine.com"
-              className="text-yellow-400 hover:text-yellow-300 font-medium"
+              className="text-[rgb(53,0,14)] hover:text-[rgb(70,0,20)] font-medium"
             >
               contact@vicvalentine.com
             </a>
             <span className="hidden sm:inline text-gray-600">•</span>
             <a
               href="tel:+44XXXXXXXXXX"
-              className="text-yellow-400 hover:text-yellow-300 font-medium"
+              className="text-[rgb(53,0,14)] hover:text-[rgb(70,0,20)] font-medium"
             >
               +44 XXXX XXXXXX
             </a>

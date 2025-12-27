@@ -14,13 +14,13 @@ export default function Navigation() {
   }
 
   return (
-    <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
+    <nav className="sticky top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-white text-xl font-bold hover:text-yellow-400 transition-colors"
+              className="text-white text-xl font-bold hover:text-[rgb(53,0,14)] transition-colors"
             >
               Victor Valentine
             </button>
@@ -31,19 +31,19 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-sm font-medium transition-colors"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-gray-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-gray-300 hover:text-yellow-400 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact
               </button>
@@ -74,19 +74,19 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1 bg-black/95">
             <button
               onClick={() => scrollToSection('about')}
-              className="block text-gray-300 hover:text-yellow-400 px-3 py-2 text-base font-medium w-full text-left"
+              className="block text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-base font-medium w-full text-left"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="block text-gray-300 hover:text-yellow-400 px-3 py-2 text-base font-medium w-full text-left"
+              className="block text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-base font-medium w-full text-left"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="block text-gray-300 hover:text-yellow-400 px-3 py-2 text-base font-medium w-full text-left"
+              className="block text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-base font-medium w-full text-left"
             >
               Contact
             </button>
