@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,12 +10,42 @@ export default function Contact() {
     message: '',
     service: 'session-gigs',
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Here you would typically send the form data to a backend or email service
-    alert('Thank you for your message! I\'ll get back to you soon.')
-    setFormData({ name: '', email: '', message: '', service: 'session-gigs' })
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          service: formData.service,
+          message: formData.message,
+          to_email: 'drums@vicvalentine.com',
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+      )
+
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', message: '', service: 'session-gigs' })
+      
+      // Reset status message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000)
+    } catch (error) {
+      console.error('Email sending failed:', error)
+      setSubmitStatus('error')
+      
+      // Reset error message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -101,10 +132,22 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full bg-[#D4A574] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#E0B88A] transition-colors shadow-lg hover:shadow-xl uppercase tracking-normal"
+              disabled={isSubmitting}
+              className="w-full bg-[#D4A574] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#E0B88A] transition-colors shadow-lg hover:shadow-xl uppercase tracking-normal disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Send Message
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
+            
+            {submitStatus === 'success' && (
+              <p className="mt-4 text-center text-green-400 text-sm">
+                Thank you for your message! I'll get back to you soon.
+              </p>
+            )}
+            {submitStatus === 'error' && (
+              <p className="mt-4 text-center text-red-400 text-sm">
+                Something went wrong. Please try again or email me directly at drums@vicvalentine.com
+              </p>
+            )}
           </form>
         </div>
 
