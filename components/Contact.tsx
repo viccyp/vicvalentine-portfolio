@@ -112,10 +112,10 @@ export default function Contact() {
           <p className="text-gray-400 mb-4 uppercase tracking-normal">Or reach out directly:</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="mailto:contact@vicvalentine.com"
+              href="mailto:drums@vicvalentine.com"
               className="text-[#D4A574] hover:text-[#E0B88A] font-medium"
             >
-              contact@vicvalentine.com
+              drums@vicvalentine.com
             </a>
             <span className="hidden sm:inline text-gray-600">•</span>
             <a

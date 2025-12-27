@@ -57,7 +57,7 @@ npm start
 ### Update Contact Information
 
 Edit `components/Contact.tsx` and replace:
-- Email: `contact@vicvalentine.com`
+- Email: `drums@vicvalentine.com`
 - Phone: `+44 XXXX XXXXXX`
 
 ### Modify Content
