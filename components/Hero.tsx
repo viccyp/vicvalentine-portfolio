@@ -9,7 +9,7 @@ export default function Hero() {
           Professional Drummer
         </p>
         <p className="text-xl md:text-2xl text-gray-300 mb-8 uppercase tracking-normal">
-          North London
+          Based in London
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a

@@ -5,7 +5,7 @@ export default function About() {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 uppercase tracking-normal">About Me</h2>
         <div className="prose prose-lg max-w-none text-center">
           <p className="text-xl text-gray-300 leading-relaxed mb-6">
-            I'm a professional drummer based in North London, passionate about bringing rhythm and energy to every performance. 
+            I'm a professional drummer based in London, passionate about bringing rhythm and energy to every performance. 
             With years of experience in the music industry, I specialise in delivering exceptional drumming for live sessions, 
             studio recordings, and teaching the next generation of drummers.
           </p>

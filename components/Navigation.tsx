@@ -70,16 +70,8 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden relative">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('/hero-bg.jpg')",
-            }}
-          >
-            <div className="absolute inset-0 bg-black/90"></div>
-          </div>
-          <div className="relative px-2 pt-2 pb-3 space-y-1">
+        <div className="md:hidden relative bg-transparent">
+          <div className="px-2 pt-2 pb-3 space-y-1">
             <button
               onClick={() => scrollToSection('about')}
               className="block text-gray-300 hover:text-[#D4A574] px-3 py-2 text-base font-medium w-full text-left uppercase tracking-normal"

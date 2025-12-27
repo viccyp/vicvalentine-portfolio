@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Vic Valentine - Professional Drummer | North London',
-  description: 'Professional drummer based in North London. Offering session gigs, recordings, and drum lessons.',
+  title: 'Vic Valentine - Professional Drummer | London',
+  description: 'Professional drummer based in London. Offering session gigs, recordings, and drum lessons.',
 }
 
 export default function RootLayout({
