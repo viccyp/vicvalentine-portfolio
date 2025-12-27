@@ -1,4 +1,4 @@
-# Victor Valentine - Portfolio Website
+# Vic Valentine - Portfolio Website
 
 A modern portfolio website built with Next.js, showcasing professional drumming services including session gigs, recordings, and drum lessons.
 
