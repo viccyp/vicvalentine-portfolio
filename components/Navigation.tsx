@@ -31,7 +31,7 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-white text-xl font-bold hover:text-[rgb(53,0,14)] transition-colors"
+              className="text-white text-xl font-bold hover:text-[rgb(180,30,60)] transition-colors uppercase tracking-wide"
             >
               Victor Valentine
             </button>
@@ -42,19 +42,19 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-300 hover:text-[rgb(180,30,60)] px-3 py-2 text-sm font-medium transition-colors uppercase tracking-wide"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-300 hover:text-[rgb(180,30,60)] px-3 py-2 text-sm font-medium transition-colors uppercase tracking-wide"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-300 hover:text-[rgb(180,30,60)] px-3 py-2 text-sm font-medium transition-colors uppercase tracking-wide"
               >
                 Contact
               </button>
@@ -93,19 +93,19 @@ export default function Navigation() {
           <div className="relative px-2 pt-2 pb-3 space-y-1">
             <button
               onClick={() => scrollToSection('about')}
-              className="block text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-base font-medium w-full text-left"
+              className="block text-gray-300 hover:text-[rgb(180,30,60)] px-3 py-2 text-base font-medium w-full text-left uppercase tracking-wide"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="block text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-base font-medium w-full text-left"
+              className="block text-gray-300 hover:text-[rgb(180,30,60)] px-3 py-2 text-base font-medium w-full text-left uppercase tracking-wide"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="block text-gray-300 hover:text-[rgb(53,0,14)] px-3 py-2 text-base font-medium w-full text-left"
+              className="block text-gray-300 hover:text-[rgb(180,30,60)] px-3 py-2 text-base font-medium w-full text-left uppercase tracking-wide"
             >
               Contact
             </button>

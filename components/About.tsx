@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-black text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">About Me</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 uppercase tracking-wider">About Me</h2>
         <div className="prose prose-lg max-w-none text-center">
           <p className="text-xl text-gray-300 leading-relaxed mb-6">
             I'm a professional drummer based in North London, passionate about bringing rhythm and energy to every performance. 
