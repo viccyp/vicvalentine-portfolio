@@ -27,10 +27,10 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-[#2D5A7A] transition-all duration-300 hover:shadow-xl hover:shadow-[#2D5A7A]/20"
+              className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-[#D4A574] transition-all duration-300 hover:shadow-xl hover:shadow-[#D4A574]/20"
             >
               <div className="text-5xl mb-4 text-center">{service.icon}</div>
-              <h3 className="text-2xl font-bold mb-4 text-[#2D5A7A] uppercase tracking-normal">{service.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#D4A574] uppercase tracking-normal">{service.title}</h3>
               <p className="text-gray-300 leading-relaxed">{service.description}</p>
             </div>
           ))}
